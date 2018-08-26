@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+<title>Magnifier: Magnify Image On Hover Demo</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery.magnifier.min.js"></script>
+<script type="text/javascript">
+function init(k) {
+ $(k).magnifier({magnify:10, region:{h:38.7, w:38.7}, display:$('#display')});
+}
+$(document).ready(function() {
+ $('#button').click(function() {
+  init($('.artwork'));
+  $('#button').remove();
+ });
+});
+</script>
+<style>
+body{
+ margin:0px;
+ padding:0px;
+}
+.container { margin: 150px auto; }
+.artwork {
+ width:100px;
+}
+.mgnfr-portal {
+ position:absolute;
+ top:150px;
+ left:100px;
+}
+#button {
+ background-color:#eaefea;
+ color:#6e746e;
+ font-family:'Open Sans', Tahoma;
+ letter-spacing:1px;
+ text-transform:uppercase;
+}
+</style>
+</head>
+<body>
+  <div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/zoom/Magnify-Image-On-Hover-Magnifier.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+  <div class="container">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Great_Wave_off_Kanagawa2.jpg/640px-Great_Wave_off_Kanagawa2.jpg" class="artwork"><br>
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/be/El_coloso.jpg/696px-El_coloso.jpg" class="artwork"><br>
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Honor%C3%A9_Daumier_017_%28Don_Quixote%29.jpg/533px-Honor%C3%A9_Daumier_017_%28Don_Quixote%29.jpg" class="artwork"><br>
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Claude_Monet_-_Waterloo_Bridge%2C_Effet_de_Soleil.jpg/800px-Claude_Monet_-_Waterloo_Bridge%2C_Effet_de_Soleil.jpg" class="artwork"><br>
+<button id="button">Magnify!</button>
+<div id="display"></div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
